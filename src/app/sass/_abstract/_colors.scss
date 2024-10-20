@@ -1,0 +1,24 @@
+@tailwind base;
+
+@layer base {
+    :root {
+        --clr-primary: hsl(197, 97%, 56%); //#21C0FC;
+        --clr-primary-light: #24E3F2; //#24E3F2;
+        --clr-primary-deep: #0798D0; //#0798D0;
+        --clr-base-text: #333333; //#333333;
+        --clr-card-light: #EBF5FF; //#EBF5FF;
+
+
+        /* THEMING */
+
+        --theme-clr-primary: 197deg 97% 56%; //#22c0fc;
+        --theme-clr-primary-light: 184deg 89%, 55%; //#24E3F2;
+        --theme-clr-primary-deep: 197deg 93% 42%; //#0798D0;
+        --theme-clr-base-text: 0deg 0% 20%; //#333333;
+        --theme-clr-card-light: 210deg 100% 96%; //#EBF5FF;
+
+
+
+    }
+
+}
