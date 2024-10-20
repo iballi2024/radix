@@ -1,5 +1,5 @@
 
-import MainToolbar from "./components/MainToolbar";
+import MainToolbar from "./shared/components/MainToolbar";
 import Landing from "./landing/page";
 import "./sass/main.scss";
 

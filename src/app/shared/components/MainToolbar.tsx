@@ -1,16 +1,14 @@
 'use client'
 
-import React, { useEffect, useRef, useState } from 'react';
-import brandLogo from "../public/images/brand-logo.svg";
+import brandLogo from "../../public/images/brand-logo.svg";
 import Image from 'next/image';
-import Button from './Button';
 import Link from 'next/link';
 import ButtonLink from './ButtonLink';
 import NavLink from './NavLink';
 import MobileMenuToggler from './MobileMenuToggler';
 import MobileMenu from './MobileMenu';
 import { Provider } from 'react-redux';
-import store from '../store';
+import store from '../../store';
 
 export default function MainToolbar() {
     return (
@@ -42,8 +40,8 @@ export default function MainToolbar() {
                         </div>
                         <div className="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
 
-                            <a href="#" className="hidden sm:block rounded-md px-2 xl:px-10 py-2 text-xs font-medium text-white hover:text-theme-clr-primary">Terms of Service</a>
-                            <a href="#" className="hidden sm:block rounded-md px-2 xl:px-10 py-2 text-xs font-medium text-white hover:text-theme-clr-primary">Contact</a>
+                            <NavLink url="/terms-of-service" title="Terms of Service" />
+                            <NavLink url="/contact" title="Contact" />
 
                             <ButtonLink link="#" label="Merchant Login" isInverse={true} classNames="hidden sm:block" />
                             {/* <a href="#" className="hidden sm:block rounded-md px-4 py-2 text-xs font-medium text-white border border-theme-clr-primary">Merchant Login</a> */}
@@ -56,9 +54,9 @@ export default function MainToolbar() {
                 </div>
 
                 {/* <!-- Mobile menu, show/hide based on menu state. --> */}
-                        <Provider store={store}>
-                            <MobileMenu />
-                        </Provider>
+                <Provider store={store}>
+                    <MobileMenu />
+                </Provider>
             </nav>
         </header>
     )

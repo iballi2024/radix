@@ -1,7 +1,7 @@
 'use client';
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import { appActions } from '../store';
+import { appActions } from '../../store';
 
 export default function MobileMenuToggler() {
 

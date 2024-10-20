@@ -22,6 +22,7 @@ const config: Config = {
         "theme-clr-primary": "hsl(var(--theme-clr-primary))",
         "theme-clr-primary-light": "hsl(var(--theme-clr-primary-light))",
         "theme-clr-primary-deep": "hsl(var(--theme-clr-primary-deep))",
+        "theme-clr-card-light": "hsl(var(--theme-clr-card-light))",
       },
     },
   },

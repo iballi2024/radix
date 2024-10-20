@@ -11,13 +11,13 @@ const gothamItalic = localFont({
 export const gothamLight = localFont({
   src: "./fonts/Gotham/Gotham-Light.otf",
   variable: "--font-gotham-light",
-  // weight: '400'
+  weight: '400'
 });
 
 export const gothamMedium = localFont({
   src: "./fonts/Gotham/Gotham-Medium.otf",
   variable: "--font-gotham-medium",
-  // weight: '400'
+  weight: '400'
 });
 
 export const metadata: Metadata = {
