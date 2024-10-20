@@ -1,27 +1,14 @@
 import { configureStore, createSlice, createStore } from "@reduxjs/toolkit";
+import { UISlice } from "./ui-slice";
 
-const initialState = {
-    isMobileNavOpen: false
-}
-const appSlice = createSlice({
-    name: 'app',
-    initialState,
-    reducers: {
-        toggle: (state) => {
-            state.isMobileNavOpen = !state.isMobileNavOpen
-        }
-    }
-})
 
 
 // const store = createStore(appSlice.reducer);
 const store = configureStore({
     reducer: {
-        app: appSlice.reducer
+        UI: UISlice.reducer
     }
 });
-
-export const appActions = appSlice.actions
 
 export default store;
 // TypeScript types

@@ -40,8 +40,8 @@ export default function MainToolbar() {
                         </div>
                         <div className="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
 
-                            <NavLink url="/terms-of-service" title="Terms of Service" />
-                            <NavLink url="/contact" title="Contact" />
+                            <NavLink url="/terms-of-service" title="Terms of Service" classNames="hidden sm:block" />
+                            <NavLink url="/contact" title="Contact" classNames="hidden sm:block" />
 
                             <ButtonLink link="#" label="Merchant Login" isInverse={true} classNames="hidden sm:block" />
                             {/* <a href="#" className="hidden sm:block rounded-md px-4 py-2 text-xs font-medium text-white border border-theme-clr-primary">Merchant Login</a> */}

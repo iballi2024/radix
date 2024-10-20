@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 
 export default function MobileMenu() {
-    const isMobileNavOpen = useSelector((state: any) => state.app.isMobileNavOpen);
+    const isMobileNavOpen = useSelector((state: any) => state.UI.isMobileNavOpen);
     return (
         <>
             {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:text-theme-clr-primary" --> */}

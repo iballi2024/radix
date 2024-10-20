@@ -1,14 +1,14 @@
 'use client';
+import { UIActions } from '@/app/store/ui-slice';
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import { appActions } from '../../store';
 
 export default function MobileMenuToggler() {
 
     const dispatch = useDispatch()
 
     const handleToggleMobileMenu = () => {
-        dispatch(appActions.toggle())
+        dispatch(UIActions.toggle())
     }
 
     return (
